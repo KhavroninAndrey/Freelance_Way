@@ -1,0 +1,46 @@
+.header {
+  height: 56px;
+  background-color: #f1f1f1;
+}
+.container {
+  max-width: 1136px;
+  margin: 0 auto;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  text-decoration: none;
+  font-family: Tahoma;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #202020;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.nav a {
+  text-decoration: none;
+  font-family: Tahoma;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #202020;
+}
+.nav_item:not(:first-child){
+  margin-left: 21px;
+}
+.login {
+  font-family: Tahoma;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #202020;
+  border: none;
+}
