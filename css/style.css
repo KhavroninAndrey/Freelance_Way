@@ -1,6 +1,11 @@
+@font-face {
+  font-family: 'Museo Cyrl 900';
+  src: local('☺'), url('../fonts/Museo\ Cyrl\ 900.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
-  font-family: sans-serif;
-  font-family: Tahoma;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
 }
 .header {
@@ -64,6 +69,7 @@ body {
 }
 .title {
   font-size: 54px;
+  font-family: 'Museo Cyrl 900';
   line-height: 1.2;
   font-weight: 700;
   margin-top: 0;
