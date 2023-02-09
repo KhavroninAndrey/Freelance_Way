@@ -226,3 +226,14 @@ body {
   color: inherit;
   margin-bottom: 16px;
 }
+.arrow {
+  position: fixed;
+  right: 100px;
+  bottom: 100px;
+  width: 20px;
+  height: 20px;
+  background-color: #f1f1f1;
+  padding-left: 7px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
