@@ -8,6 +8,9 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
 }
+img{
+  max-width: 100%;
+}
 .header {
   background-color: #f1f1f1;
   position: fixed;
@@ -109,7 +112,7 @@ body {
   font-size: 16px;
   line-height: 1.2;
   font-weight: 400;
-  flex-basis: 45%;
+  flex-basis: 46%;
   margin-bottom: 16px;
 }
 .price-block {
@@ -126,6 +129,22 @@ body {
 .favorite {
   color: inherit;
   text-decoration: none;
+  position: relative;
+  margin-left: 26px;
+  padding-left: 33px;
+}
+.favorite::before {
+  content: '';
+  height: 23px;
+  width: 26px;
+  margin-right: 7px;
+  left: 0;
+  color: inherit;
+  display: inline-block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: url('/img/love_and_romance_815.png');
 }
 .button {
   padding: 22px 50px;
@@ -152,7 +171,7 @@ body {
 }
 .about-container {
   display: flex;
-  align-items: center;
+  align-items:flex-start;
   padding: 93px 110px;
   background-color: #f1f1f1;
 }
@@ -196,6 +215,7 @@ body {
   font-size: 32px;
   line-height: 1.2;
   font-weight: 700;
+  margin-top: 0;
 }
 .about-text {
   font-size: 14px;
@@ -254,4 +274,113 @@ body {
   padding-left: 7px;
   padding-top: 5px;
   padding-bottom: 2px;
+}
+@media (max-width: 1200px){
+  .container {
+    max-width: 992px;
+  }
+  .block-img {
+    width: 390px;
+  }
+  .hero-text {
+    margin-left: 29px;
+  }
+  .bio {
+    margin-left: 52px;
+  }
+  .about-text {
+    max-width: 367px;
+    min-width: 367px;
+  }
+  .readers-container{
+    padding-top: 69px;
+    padding-bottom: 93px;
+  }
+  .reader {
+    height: 139px;
+    width: 139px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+      max-width: 768px;
+    }
+  .nav {
+    display: none;
+  }
+  .block-img {
+    min-width: 298px;
+  }
+  .author-name{
+    font-size: 22px;
+    margin-bottom: 13px;
+  }
+  .title {
+    font-size: 46px;
+    margin-bottom: 10px;
+  }
+  .hero-text {
+    margin-left: 32px;
+  }
+  .subtitle {
+    font-size: 24px;
+    margin-bottom: 29px;
+  }
+  .button {
+    padding: 17px 40px;
+  }
+  .info {
+    margin-bottom: 39px;
+  }
+  .info-text{
+    margin-bottom: 16px;
+  }
+  .format{
+    flex-grow: 1;
+  }
+  .age {
+    flex-grow: 1;
+  }
+  .price-block {
+    margin-bottom: 39px;
+  }
+  .about-container {
+    flex-wrap: wrap;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+  .about-book {
+    min-width: 100%;
+    margin-bottom: 62px;
+  }
+  .about-text{
+    max-width: 100%;
+  }
+  .bio {
+    max-width: 100%;
+    margin-left: 0;
+  }
+  .readers-container{
+    padding-bottom: 60px;
+  }
+  .reader:nth-child(11){
+    display: none;
+  }
+  .reader:nth-child(12) {
+    display: none;
+  }
+  .reader:nth-child(10) {
+    display: none;
+  }
+  .reader:nth-child(9) {
+    display: none;
+  }
+  .reader{
+    margin-right: 30;
+    height: 165px;
+    width: 165px;
+  }
 }
